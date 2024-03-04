@@ -1,0 +1,24 @@
+.header_container{
+    padding-top: 2.38rem;
+    display: grid;
+    grid-template-columns: 112px auto auto;
+    align-items: center;
+    justify-content: normal;
+}
+.main_navigation{
+    margin-left: 5rem;
+}
+.main_navigation ul{
+    gap: 1.75rem;
+}
+.navigation_link{
+    color: var(--clr-black);
+    padding-bottom: 0.19rem;
+}
+.navigation_link:hover{
+    color: var(--clr-brightred);
+}
+.navigation_link:active{
+    border-bottom: 1px solid var(--clr-brightred);
+    font-weight: var(--fw-700);
+}

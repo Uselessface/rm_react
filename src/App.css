@@ -1,0 +1,60 @@
+@import url('./reset.css');
+
+:root{
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-grey: #a1a1a1;
+  --clr-lightgray: #f7f7f7;
+  --clr-brightred: #ff0000;
+  --clr-palered:#df0000;
+  --clr-blue:#1400ff;
+  --clr-brightblue:#00a3ff;
+  --clr-paleblue:#008bda;
+  --clr-yellow:#ffc803;
+  --clr-green:#00ca51;
+  --clr-login-hover:#1f4766;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn{
+  font-size: 1.125rem;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--clr-black);
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+}
+.black_btn{
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+body{
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+header,main,footer,section{
+  width: 100%;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.user_container{
+  margin-left: auto;
+  gap: 2.5rem;
+}
