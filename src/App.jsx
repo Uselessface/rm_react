@@ -1,22 +1,8 @@
-
 import './App.css'
-import Header from "./components/Header/Header.jsx";
-import Categories from "./components/Categories/Categories.jsx";
-
+import {RouterProvider} from "react-router-dom";
+import router from './helpers/routerProvider.jsx'
 
 function App() {
-
-
-  return (
-      <>
-          <Header/>
-          <main>
-              <div className="container">
-                <Categories/>
-              </div>
-          </main>
-      </>
-  )
+  return <RouterProvider router={router}/>
 }
-
 export default App

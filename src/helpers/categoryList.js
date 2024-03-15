@@ -5,19 +5,26 @@ import characters from '../assets/59021838390253c0c437006778876d13.jpg'
 
 const categoryList = [
     {
-        link: 'character',
+        id: 1,
+        link: '/characters',
         src: characters,
         title: 'персонажи',
         description: 'Зайди и познакомься со всеми персонажами вселенной'
     },
-    {link: 'locations',
+    {
+        id: 2,
+        link: '/locations',
         src: locations,
         title: 'локации',
-        description: 'Исследуй все локации. Давай же, не будь занудой!'},
-    {link: 'episodes',
+        description: 'Исследуй все локации. Давай же, не будь занудой!'
+    },
+    {
+        id: 3,
+        link: '/episodes',
         src: episodes,
         title: 'эпизоды',
-        description: 'Узнай чуть больше о карте приключений Рика и Морти'},
+        description: 'Узнай чуть больше о карте приключений Рика и Морти'
+    },
 ]
 
 export {categoryList}
