@@ -19,12 +19,15 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="user_container d-flex">
-                <UserButton onClick={() => {
-                    setModalActive(true)
-                }} text={'Регистрация'}/>
-                <UserButton onClick={() => {
-                    setModalActive(true)
-                }} text={"Войти"} variant={'black_btn'}/>
+                <UserButton
+                    text={'Регистрация'}
+                    clickHandler ={setModalActive}
+                />
+                <UserButton
+                    text={"Войти"}
+                    variant={'black_btn'}
+                    clickHandler ={setModalActive}
+                />
             </div>
             <ModalForm active={modalActive} setActive={setModalActive}/>
         </div>
