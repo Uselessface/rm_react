@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import UserButton from "../UI/UserButton/UserButton.jsx";
 import ModalForm from "../ModalForm/ModalForm.jsx";
 import {useState} from "react";
+import LoginForm from "../LoginForm/LoginForm.jsx";
 
 const Header = () => {
     let [modalActive, setModalActive] = useState(false)
@@ -25,12 +26,12 @@ const Header = () => {
                 />
                 <UserButton
                     text={"Войти"}
-                    variant={'black_btn'}
+                    variant={'black'}
                     clickHandler ={setModalActive}
                 />
             </div>
             <ModalForm active={modalActive} setActive={setModalActive}>
-
+                <LoginForm />
             </ModalForm>
         </div>
 

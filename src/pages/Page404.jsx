@@ -21,7 +21,7 @@ const Page404 = () => {
                     <p>Упс. Кажется вы заблудились. Только без паники!</p>
                     <p>Страница, которую вы ищите не существует, либо была удалена</p>
                     <Link to={'/'}>
-                        <UserButton variant={'black_btn'} text={'Домой'}>
+                        <UserButton variant={'black'} text={'Домой'}>
                             <img src={homeIcon} alt="home icon"/>
                         </UserButton>
                     </Link>
