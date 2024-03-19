@@ -6,7 +6,7 @@ import ModalForm from "../ModalForm/ModalForm.jsx";
 import {useState} from "react";
 
 const Header = () => {
-    let [modalActive, setModalActive] = useState(true)
+    let [modalActive, setModalActive] = useState(false)
 
     return (
         <div className="container header_container d-flex">
@@ -29,7 +29,9 @@ const Header = () => {
                     clickHandler ={setModalActive}
                 />
             </div>
-            <ModalForm active={modalActive} setActive={setModalActive}/>
+            <ModalForm active={modalActive} setActive={setModalActive}>
+
+            </ModalForm>
         </div>
 
     );
