@@ -2,7 +2,7 @@ import logo from "../../assets/icons/logo.png"
 import './Header.css'
 import {Link} from "react-router-dom";
 import UserButton from "../UI/UserButton/UserButton.jsx";
-import ModalForm from "../ModalForm/ModalForm.jsx";
+import Modal from "../Modal/Modal.jsx";
 import {useState} from "react";
 import LoginForm from "../LoginForm/LoginForm.jsx";
 
@@ -30,9 +30,9 @@ const Header = () => {
                     clickHandler ={setModalActive}
                 />
             </div>
-            <ModalForm active={modalActive} setActive={setModalActive}>
+            <Modal active={modalActive} setActive={setModalActive}>
                 <LoginForm />
-            </ModalForm>
+            </Modal>
         </div>
 
     );

@@ -1,7 +1,7 @@
 import './ModalForm.css';
 import formBg from '../../assets/formBg.webp'
 // eslint-disable-next-line react/prop-types
-const ModalForm = ({active, setActive, children}) => {
+const Modal = ({active, setActive, children}) => {
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
             <img src={formBg} alt="" className="fixedImage"/>
@@ -12,4 +12,4 @@ const ModalForm = ({active, setActive, children}) => {
     );
 };
 
-export default ModalForm;
+export default Modal;
