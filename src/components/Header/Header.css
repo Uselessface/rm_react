@@ -1,7 +1,10 @@
+header{
+    width: 100%;
+}
 .header_container{
     padding-top: 2.38rem;
     display: grid;
-    grid-template-columns: 112px auto auto;
+    grid-template-columns: 112px 1fr 1fr;
     align-items: center;
     justify-content: normal;
 }
@@ -23,6 +26,9 @@
     font-weight: var(--fw-700);
 }
 .user_container{
+    display: flex;
+    align-items: center;
+    justify-self: end;
     margin-left: auto;
     gap: 2.5rem;
 }

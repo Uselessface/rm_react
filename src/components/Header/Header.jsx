@@ -10,7 +10,7 @@ const Header = () => {
     let [modalActive, setModalActive] = useState(false)
 
     return (
-        <div className="container header_container d-flex">
+        <header className="header_container">
             <img className='logo' src={logo} alt={'logo'}/>
             <nav className="main_navigation">
                 <ul className="d-flex">
@@ -19,7 +19,7 @@ const Header = () => {
                     <li><Link className={'navigation_link'} to={'/'}>О проекте</Link></li>
                 </ul>
             </nav>
-            <div className="user_container d-flex">
+            <div className="user_container">
                 <UserButton
                     text={'Регистрация'}
                     clickHandler ={setModalActive}
@@ -33,7 +33,7 @@ const Header = () => {
             <ModalForm active={modalActive} setActive={setModalActive}>
                 <LoginForm />
             </ModalForm>
-        </div>
+        </header>
 
     );
 };

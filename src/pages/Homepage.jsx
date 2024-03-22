@@ -10,15 +10,12 @@ const Homepage = () => {
 
 
     return (
-        <>
-            <Header />
+        <Container>
+            <Header/>
             <main>
-                <Container>
-                    <Categories/>
-                </Container>
+                <Categories/>
             </main>
-
-        </>
+        </Container>
     );
 };
 

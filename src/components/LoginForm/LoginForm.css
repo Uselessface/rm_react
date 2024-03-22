@@ -16,4 +16,5 @@ form{
     justify-content: flex-start;
     flex-direction: column;
     gap: 35px;
+    width: 100%;
 }
