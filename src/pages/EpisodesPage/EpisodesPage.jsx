@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from "../../Components/UI/Container/Container";
-import Header from "../../Components/Header/Header";
+import Container from "../../components/UI/Container/Container";
+import Header from "../../components/Header/Header";
 
 const EpisodesPage = () => {
     return (

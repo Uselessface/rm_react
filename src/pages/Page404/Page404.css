@@ -1,0 +1,12 @@
+.error_container{
+    display: grid;
+    place-items: center;
+}
+h3{
+    margin-block: 15px;
+    font-size: 1.5rem;
+}
+
+button{
+    margin-top: 20px;
+}

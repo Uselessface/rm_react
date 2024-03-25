@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from "../UI/FormInput/FormInput.jsx";
-import UserButton from "../UI/UserButton/UserButton.jsx";
 import './LoginForm.css'
+import CustomButton from "../UI/CustomButton/CustomButton.jsx";
 
 const LoginForm = () => {
     return (
@@ -18,7 +18,7 @@ const LoginForm = () => {
                     required={'required'}
                     type={'password'}
                 />
-                <UserButton text={'Войти'} variant={'black'}/>
+                <CustomButton text={'Войти'} variant={'black'}/>
             </form>
         </div>
     );

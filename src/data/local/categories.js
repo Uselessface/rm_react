@@ -1,6 +1,6 @@
-import charactersImage from '../../assets/assets/characters.jpg'
-import locationsImage from '../../assets/assets/locations.png'
-import episodesImage from '../../assets/assets/episodes.png'
+import charactersImage from '../../assets/characters.jpg'
+import locationsImage from '../../assets/locations.png'
+import episodesImage from '../../assets/episodes.png'
 import {v4} from "uuid";
 
 

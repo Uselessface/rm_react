@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "../../Components/Header/Header";
-import CategoryContainer from "../../Components/CategoryContainer/CategoryContainer";
+import Header from "../../components/Header/Header";
+import CategoryContainer from "../../components/CategoryContainer/CategoryContainer";
 import categories from "../../data/local/categories";
-import Container from "../../Components/UI/Container/Container";
+import Container from "../../components/UI/Container/Container";
 
 const HomePage = () => {
     return (
