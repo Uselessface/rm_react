@@ -1,0 +1,12 @@
+.main_navigation__link{
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+}
+.main_navigation__link:hover,
+.main_navigation__link:active,
+.main_navigation__link.active_link{
+    color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 10px;
+}

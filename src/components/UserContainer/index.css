@@ -1,0 +1,7 @@
+.user_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    justify-self: end;
+}

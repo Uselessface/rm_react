@@ -1,13 +1,16 @@
-import './Category.css'
+import React from 'react';
+import "./Category.css"
 import {Link} from "react-router-dom";
-// eslint-disable-next-line react/prop-types
-const Category = ({link,src,title,description}) => {
+
+const Category = ({image,title,description,id,path}) => {
     return (
-        <Link to={link} className="category">
-            <img src={src} alt=""/>
-            <div className="category_info">
-                <h3 className="category_header">{title}</h3>
-                <span>{description}</span>
+        <Link to={path} className="category">
+            <div className="category__image_container">
+                <img src={image} alt="" className="category__image"/>
+            </div>
+            <div className="category__info_container">
+                <h3 className="category__info_header">{title}</h3>
+                <p className="category__info_description">{description}</p>
             </div>
         </Link>
     );

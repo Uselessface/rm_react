@@ -1,0 +1,13 @@
+.main_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.secondary{
+    background-color: #000;
+    color: #fff;
+}
