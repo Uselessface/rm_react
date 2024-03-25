@@ -1,0 +1,5 @@
+.posts_container{
+    display: grid;
+    place-items: center;
+    gap: 35px;
+}

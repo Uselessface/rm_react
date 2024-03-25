@@ -1,0 +1,10 @@
+.post{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    border-radius: 1.1875rem;
+    border: 1px solid rgba(161, 161, 161, 0.60);
+    cursor: pointer;
+    transition: box-shadow 150ms ease-in-out;
+    color:#000000;
+}
