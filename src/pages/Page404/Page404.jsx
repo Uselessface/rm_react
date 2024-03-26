@@ -19,7 +19,7 @@ const Page404 = () => {
                 <p>Страница, которую вы ищете не существует, либо была удалена</p>
                 <Link to={'/'}>
                     <CustomButton variant={'secondary'} text={'Домой'}>
-                        <img style={{marginRight: 15 + 'px'}} src={homeIcon} alt="home icon"/>
+                        <img src={homeIcon} alt="home icon"/>
                     </CustomButton>
                 </Link>
             </div>

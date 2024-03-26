@@ -1,13 +1,14 @@
 import React from "react";
 import './CustomButton.css'
 
-function CustomButton(props) {
+function CustomButton({clickHandler,variant,text,children}) {
+    
 
     return (
         <button
-            onClick={props.clickHandler}
-            className={props.variant ? `main_button ${props.variant}` : `main_button`}>
-            {props.children && <span>{props.children}</span>} {props.text}
+            onClick ={()=> clickHandler(true)}
+            className={variant ? `main_button ${variant}` : `main_button`}>
+            {children && <span style={{marginRight: 15 + 'px'}}>{children}</span>} {text}
         </button>
     )
 }

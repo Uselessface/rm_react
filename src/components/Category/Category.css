@@ -6,9 +6,9 @@
     color: black;
 }
 .category:hover{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(161,161,161,0.6);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(161,161,161,0.6);
-    box-shadow: 10px 10px 5px 0px rgba(161,161,161,0.6);
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(161,161,161,0.6);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(161,161,161,0.6);
+    box-shadow: 10px 10px 5px 0 rgba(161,161,161,0.6);
 }
 .category__image_container{
     height: 494px;
