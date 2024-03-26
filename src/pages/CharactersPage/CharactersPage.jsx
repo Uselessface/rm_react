@@ -6,6 +6,7 @@ import DefaultPost from "../../components/DefaultPost/DefaultPost.jsx";
 import Loader from "../../components/UI/Loader/Loader.jsx";
 import Page404 from "../Page404/Page404.jsx";
 import CustomButton from "../../components/UI/CustomButton/CustomButton.jsx";
+import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 
 const api = `https://rickandmortyapi.com/api/character`;
 
@@ -38,6 +39,7 @@ const CharactersPage = () => {
         <Container>
             <Header/>
             {error && <Page404/>}
+            <PageHeader pageTitle={'Персонажи'}/>
             {!error && <PostsContainer>
                 {isLoading && <Loader/> }
                 {!isLoading && posts.map((post) => {

@@ -1,0 +1,5 @@
+.backbutton{
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+}

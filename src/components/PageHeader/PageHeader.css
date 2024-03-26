@@ -1,0 +1,9 @@
+.page_header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px 0;
+}
+.page_title{
+    font-size: 2rem;
+    font-weight: bold;
+}
