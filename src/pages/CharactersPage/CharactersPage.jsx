@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Header from "../../components/Header/Header";
 import Container from "../../components/UI/Container/Container";
 import PostsContainer from "../../components/PostsContainer/PostsContainer.jsx";
@@ -17,7 +17,6 @@ const CharactersPage = () => {
     const [error, setError] = useState('')
     const [page, setPage] = useState(1)
 
-    const abortControllerRef = useRef(null)
 
     useEffect(() => {
         const fetchPost = async () => {
