@@ -1,5 +1,5 @@
 .back_button{
     display: flex;
     align-items: center;
-    row-gap: 1rem;
+    column-gap: 1rem;
 }
