@@ -3,6 +3,18 @@ import CustomButton from "../UI/CustomButton/CustomButton.jsx";
 import addIcon from '../../assets/icons/addIcon.svg'
 // eslint-disable-next-line react/prop-types
 const DefaultPost = ({image, title, race, status, origin, location, episode, gender}) => {
+    let statusValue = ''
+
+    if (status === "Alive"){
+        statusValue = 'Живой'
+    }
+    if (status === "Dead"){
+        statusValue = 'Мертв'
+    }
+    if (status === "unknown"){
+        statusValue = 'Неизвестно'
+    }
+
     return (
         <div className={'post'}>
             <div className="post_image">
@@ -12,7 +24,7 @@ const DefaultPost = ({image, title, race, status, origin, location, episode, gen
                 <div className="post_title_container">
                     <h4>{title}</h4>
                     <div className="post_status">
-                        {status}
+                        {statusValue}
                     </div>
                 </div>
                 <div className="post_info_container">
