@@ -1,0 +1,15 @@
+.arrow_button{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.rotated{
+    transform: rotate(180deg);
+    order: 2;
+}
+.no_break{
+    display: none;
+}

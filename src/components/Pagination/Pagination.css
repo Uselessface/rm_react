@@ -1,17 +1,25 @@
 .pagination_container{
     display: flex;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 2rem;
     justify-content: space-around;
     max-width: 555px;
     width: 100%;
     margin: 67px auto;
 }
-.arrow_button{
+.page_button{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: .7rem;
-    font-size: .8rem;
+    padding: 2px 5px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.active_page{
+    color: red;
+    border-color: red;
 }
 .number_container{
     display: flex;
