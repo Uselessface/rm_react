@@ -10,7 +10,9 @@ const Pagination = ({clickHandler, page, pageCount}) => {
     const prev = () => {
         clickHandler(page - 1)
     }
-
+    const goToPage = (data) =>{
+        clickHandler(page = data.selected + 1)
+    }
 
     return (
         <ReactPaginate
@@ -22,6 +24,7 @@ const Pagination = ({clickHandler, page, pageCount}) => {
             pageClassName={'page_button'}
             activeClassName={'active_page'}
             initialPage={0}
+            onPageChange={goToPage}
             nextLabel={<PageButton
                 clickHandler={next}
                 text={'Следующая'}

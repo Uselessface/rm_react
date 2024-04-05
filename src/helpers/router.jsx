@@ -4,6 +4,7 @@ import CharactersPage from "../pages/CharactersPage/CharactersPage";
 import LocationsPage from "../pages/LocationsPage/LocationsPage";
 import EpisodesPage from "../pages/EpisodesPage/EpisodesPage";
 import Page404 from "../pages/Page404/Page404.jsx";
+import AboutUsPage from "../pages/AboutUsPage/AboutUsPage.jsx";
 const router = createBrowserRouter(
     [
         {
@@ -24,6 +25,11 @@ const router = createBrowserRouter(
         {
             path: '/episodes',
             element: <EpisodesPage/>,
+            errorElement: <Page404/>
+        },
+        {
+            path: '/about-us',
+            element: <AboutUsPage/>,
             errorElement: <Page404/>
         }
     ]
