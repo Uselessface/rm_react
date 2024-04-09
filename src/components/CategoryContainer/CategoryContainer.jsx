@@ -1,4 +1,3 @@
-import React from 'react';
 import './CategoryContainer.css'
 import Category from "../Category/Category";
 

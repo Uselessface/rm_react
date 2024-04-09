@@ -1,4 +1,3 @@
-import React from 'react';
 import BackButton from "../UI/BackButton/BackButton.jsx";
 import './PageHeader.css'
 

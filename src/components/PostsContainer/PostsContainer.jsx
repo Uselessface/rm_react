@@ -1,4 +1,3 @@
-import React from 'react';
 import './PostsContainer.css'
 const PostsContainer = ({variant, children}) => {
     return (

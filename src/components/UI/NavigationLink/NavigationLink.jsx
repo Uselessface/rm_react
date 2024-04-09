@@ -1,4 +1,3 @@
-import React from 'react';
 import './NavigationLink.css'
 import {NavLink} from "react-router-dom";
 const NavigationLink = ({text,path}) => {
