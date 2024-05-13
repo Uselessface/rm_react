@@ -1,6 +1,6 @@
 import './CustomButton.css'
 function CustomButton({clickHandler,variant,text,children,type,formType}) {
-    
+
 
     return (
         <button
