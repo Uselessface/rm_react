@@ -1,4 +1,5 @@
 import './FormInput.css'
+// eslint-disable-next-line react/prop-types
 const FormInput = ({type, placeholder, required,innerRef}) => {
     return (
         <input

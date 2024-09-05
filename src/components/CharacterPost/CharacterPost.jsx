@@ -1,31 +1,38 @@
-import './DefaultPost.css'
+import  './CharacterPost.css'
 import CustomButton from "../UI/CustomButton/CustomButton.jsx";
 import addIcon from '../../assets/icons/addIcon.svg'
+import useMoreInfoFetching from "../../hooks/useMoreInfoFetching.js";
 // eslint-disable-next-line react/prop-types
-const DefaultPost = ({image, title, race, status, origin, location, episode, gender}) => {
+const CharacterPost = ({image, title, race, status, origin, location, episode, gender}) => {
+    const api = `https://rickandmortyapi.com/api/episode/`
+
+    const [episodes] = useMoreInfoFetching(episode, api)
+
+
     let statusValue = ''
 
-    if (status === "Alive"){
+    if (status === "Alive") {
         statusValue = 'Живой'
     }
-    if (status === "Dead"){
+    if (status === "Dead") {
         statusValue = 'Мертв'
     }
-    if (status === "unknown"){
+    if (status === "unknown") {
         statusValue = 'Неизвестно'
     }
-
     return (
-        <div className={'post'}>
+        <div className={'character_post'}>
             <div className="post_image">
                 <img src={image} alt=""/>
             </div>
             <div className="post_data_container">
                 <div className="post_title_container">
                     <h4>{title}</h4>
-                    <div className="post_status">
-                        {statusValue}
+                    {status && <div className="post_status">
+                        <div className={status}></div>
+                        <p>{statusValue}</p>
                     </div>
+                    }
                 </div>
                 <div className="post_info_container">
                     <div className="main_info">
@@ -47,9 +54,24 @@ const DefaultPost = ({image, title, race, status, origin, location, episode, gen
                             <p className={'info_item_name'}>Пол:</p>
                             <p className={'info_item_value'}>{gender}</p>
                         </div>
-                        <div className="info_item">
+                        <div className="info_item info_item_big">
                             <p className={'info_item_name'}>Эпизоды:</p>
-                            <p className={'info_item_value'}>{episode}</p>
+                            {episodes.length > 0
+                                ?
+                                <p className={'info_item_value'}>
+                                    {episodes.map(e => {
+                                        return (
+                                            <span key={e.id}>
+                                                {`${e.id} ,`}
+                                            </span>
+                                        )
+                                    })}
+                                </p>
+                                :
+                                <p className={'info_item_value'}>
+                                    <span>{episodes.id}</span>
+                                </p>
+                            }
                         </div>
                     </div>
                     <CustomButton text={'Добавить в избранное'} variant={'add'}>
@@ -61,6 +83,7 @@ const DefaultPost = ({image, title, race, status, origin, location, episode, gen
         </div>
     )
         ;
-};
+    }
+;
 
-export default DefaultPost;
+export default CharacterPost;

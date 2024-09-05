@@ -2,9 +2,13 @@ import './Pagination.css'
 import ReactPaginate from "react-paginate";
 import PageButton from "../UI/PageButton/PageButton.jsx";
 
+// eslint-disable-next-line react/prop-types
 const Pagination = ({clickHandler, page, pageCount}) => {
 
     const next = () => {
+        if (page >= pageCount){
+            return
+        }
         clickHandler(page + 1)
     }
     const prev = () => {
@@ -23,7 +27,7 @@ const Pagination = ({clickHandler, page, pageCount}) => {
             breakClassName={'no_break'}
             pageClassName={'page_button'}
             activeClassName={'active_page'}
-            initialPage={0}
+            initialPage={1}
             onPageChange={goToPage}
             nextLabel={<PageButton
                 clickHandler={next}
