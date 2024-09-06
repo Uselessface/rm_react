@@ -3,3 +3,6 @@
     place-items: center;
     gap: 35px;
 }
+.col-2{
+    grid-template-columns: repeat(2,1fr) ;
+}

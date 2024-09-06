@@ -5,7 +5,7 @@ import homeIcon from '../../assets/icons/homeIcon.svg'
 import './Page404.css'
 import CustomButton from "../../components/UI/CustomButton/CustomButton.jsx";
 import Container from "../../components/UI/Container/Container.jsx";
-import Logo from "../../components/Logo/Logo.jsx";
+import Logo from "../../components/Utils/Logo/Logo.jsx";
 
 const Page404 = () => {
     return (

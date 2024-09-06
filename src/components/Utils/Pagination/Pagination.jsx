@@ -1,6 +1,6 @@
 import './Pagination.css'
 import ReactPaginate from "react-paginate";
-import PageButton from "../UI/PageButton/PageButton.jsx";
+import PageButton from "../../UI/PageButton/PageButton.jsx";
 
 // eslint-disable-next-line react/prop-types
 const Pagination = ({clickHandler, page, pageCount}) => {

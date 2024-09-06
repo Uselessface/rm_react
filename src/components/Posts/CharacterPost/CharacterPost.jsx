@@ -1,7 +1,7 @@
 import  './CharacterPost.css'
-import CustomButton from "../UI/CustomButton/CustomButton.jsx";
-import addIcon from '../../assets/icons/addIcon.svg'
-import useMoreInfoFetching from "../../hooks/useMoreInfoFetching.js";
+import CustomButton from "../../UI/CustomButton/CustomButton.jsx";
+import addIcon from '../../../assets/icons/addIcon.svg'
+import useMoreInfoFetching from "../../../hooks/useMoreInfoFetching.js";
 // eslint-disable-next-line react/prop-types
 const CharacterPost = ({image, title, race, status, origin, location, episode, gender}) => {
     const api = `https://rickandmortyapi.com/api/episode/`

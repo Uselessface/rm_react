@@ -2,9 +2,9 @@ import {useState} from "react";
 import './Header.css'
 import CustomButton from "../UI/CustomButton/CustomButton";
 import Navigation from "../Navigation/Navigation";
-import Logo from "../Logo/Logo";
-import UserContainer from "../UserContainer";
-import Modal from "../Modal/Modal.jsx";
+import Logo from "../Utils/Logo/Logo";
+import UserContainer from "../UI/UserContainer";
+import Modal from "../Utils/Modal/Modal.jsx";
 import RegistrationForm from "../RegistrationForm/RegistrationForm.jsx";
 import LoginForm from "../LoginForm/LoginForm.jsx";
 

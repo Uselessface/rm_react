@@ -1,7 +1,7 @@
 import styles from './EpisodePost.module.css'
-import CustomButton from "../UI/CustomButton/CustomButton.jsx";
-import addIcon from "../../assets/icons/addIcon.svg";
-import useMoreInfoFetching from "../../hooks/useMoreInfoFetching.js";
+import CustomButton from "../../UI/CustomButton/CustomButton.jsx";
+import addIcon from "../../../assets/icons/addIcon.svg";
+import useMoreInfoFetching from "../../../hooks/useMoreInfoFetching.js";
 
 
 

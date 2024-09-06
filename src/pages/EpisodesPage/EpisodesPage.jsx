@@ -1,18 +1,21 @@
 import Container from "../../components/UI/Container/Container";
 import Header from "../../components/Header/Header";
 import Page404 from "../Page404/Page404.jsx";
-import PageHeader from "../../components/PageHeader/PageHeader.jsx";
-import PostsContainer from "../../components/PostsContainer/PostsContainer.jsx";
+import PageHeader from "../../components/Utils/PageHeader/PageHeader.jsx";
+import PostsContainer from "../../components/Posts/PostsContainer/PostsContainer.jsx";
 import Loader from "../../components/UI/Loader/Loader.jsx";
-import Pagination from "../../components/Pagination/Pagination.jsx";
-import EpisodePost from "../../components/EpisodePost/EpisodePost.jsx";
+import Pagination from "../../components/Utils/Pagination/Pagination.jsx";
+import EpisodePost from "../../components/Posts/EpisodePost/EpisodePost.jsx";
 import useFetching from "../../hooks/useFetching.js";
+import {useEffect} from "react";
 
 
 const api = `https://rickandmortyapi.com/api/episode`;
 const EpisodesPage = () => {
     const [posts, isLoading, error, setPage, pageCount, page] = useFetching(api)
-
+    useEffect(()=>{
+        setPage(0);
+    },[])
     return (
         <Container>
             <Header/>

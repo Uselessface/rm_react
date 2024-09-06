@@ -1,6 +1,6 @@
 import Container from "../../components/UI/Container/Container.jsx";
 import Header from "../../components/Header/Header.jsx";
-import PageHeader from "../../components/PageHeader/PageHeader.jsx";
+import PageHeader from "../../components/Utils/PageHeader/PageHeader.jsx";
 
 const AboutUsPage = () => {
     return (

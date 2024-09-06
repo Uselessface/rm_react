@@ -1,4 +1,4 @@
-import BackButton from "../UI/BackButton/BackButton.jsx";
+import BackButton from "../../UI/BackButton/BackButton.jsx";
 import './PageHeader.css'
 
 const PageHeader = ({pageTitle}) => {
