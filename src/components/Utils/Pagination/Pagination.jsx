@@ -27,7 +27,7 @@ const Pagination = ({clickHandler, page, pageCount}) => {
             breakClassName={'no_break'}
             pageClassName={'page_button'}
             activeClassName={'active_page'}
-            initialPage={1}
+            initialPage={-1}
             onPageChange={goToPage}
             nextLabel={<PageButton
                 clickHandler={next}

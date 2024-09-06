@@ -14,7 +14,9 @@ const api = `https://rickandmortyapi.com/api/location`;
 const LocationsPage = () => {
     const [posts, isLoading, error, setPage, pageCount, page] = useFetching(api)
     useEffect(()=>{
-        setPage(0);
+        return() =>{
+            setPage(0);
+        }
     },[])
     return (
         <Container>

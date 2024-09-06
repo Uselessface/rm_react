@@ -14,7 +14,9 @@ const api = `https://rickandmortyapi.com/api/episode`;
 const EpisodesPage = () => {
     const [posts, isLoading, error, setPage, pageCount, page] = useFetching(api)
     useEffect(()=>{
-        setPage(0);
+        return() =>{
+            setPage(0);
+        }
     },[])
     return (
         <Container>
