@@ -4,7 +4,7 @@ const useFetching = (api) => {
     const [posts, setPosts] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState('')
-    const [page, setPage] = useState(1)
+    const [page, setPage] = useState(0)
     const [pageCount, setPageCount] = useState(0)
 
     useEffect(() => {
