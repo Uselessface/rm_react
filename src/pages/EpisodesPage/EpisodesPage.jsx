@@ -8,6 +8,7 @@ import Pagination from "../../components/Utils/Pagination/Pagination.jsx";
 import EpisodePost from "../../components/Posts/EpisodePost/EpisodePost.jsx";
 import useFetching from "../../hooks/useFetching.js";
 import {useEffect} from "react";
+import Filtration from "../../components/Utils/Filtration/Filtration.jsx";
 
 
 const api = `https://rickandmortyapi.com/api/episode`;
@@ -23,6 +24,7 @@ const EpisodesPage = () => {
             <Header/>
             {error && <Page404/>}
             <PageHeader pageTitle={'Эпизоды'}/>
+            {!error && <Filtration/>}
             {!error && <PostsContainer>
                 {isLoading && <Loader/>}
                 {!isLoading && posts.map((post) => {

@@ -1,0 +1,7 @@
+.filtration_container{
+    display: flex;
+    gap: 1.75rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.25rem;
+}

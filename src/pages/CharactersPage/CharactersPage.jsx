@@ -8,6 +8,8 @@ import PageHeader from "../../components/Utils/PageHeader/PageHeader.jsx";
 import Pagination from "../../components/Utils/Pagination/Pagination.jsx";
 import useFetching from "../../hooks/useFetching.js";
 import {useEffect} from "react";
+import Filtration from "../../components/Utils/Filtration/Filtration.jsx";
+import {options} from "../../data/local/charactersFilter.js";
 
 const api = `https://rickandmortyapi.com/api/character`;
 
@@ -19,11 +21,14 @@ const CharactersPage = () => {
             setPage(0);
         }
     },[])
+
+
     return (
         <Container>
             <Header/>
             {error && <Page404/>}
             <PageHeader pageTitle={'Персонажи'}/>
+            <Filtration options={options}/>
             {!error && <PostsContainer>
                 {isLoading && <Loader/> }
                 {!isLoading && posts.map((post) => {

@@ -1,5 +1,13 @@
+.input_container {
+    max-width: 330px;
+    width: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
 input{
-    max-width: 331px;
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(161,161,161,0.6);

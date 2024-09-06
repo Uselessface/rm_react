@@ -8,6 +8,7 @@ import Pagination from "../../components/Utils/Pagination/Pagination.jsx";
 import useFetching from "../../hooks/useFetching.js";
 import LocationsPost from "../../components/Posts/LocationsPost/LocationsPost.jsx";
 import {useEffect} from "react";
+import Filtration from "../../components/Utils/Filtration/Filtration.jsx";
 
 const api = `https://rickandmortyapi.com/api/location`;
 
@@ -23,6 +24,7 @@ const LocationsPage = () => {
             <Header/>
             {error && <Page404/>}
             <PageHeader pageTitle={'Локации'}/>
+            {!error && <Filtration/>}
             {!error && <PostsContainer variant={'col-2'}>
                 {isLoading && <Loader/>}
                 {!isLoading && posts.map((post) => {
